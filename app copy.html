@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IAN Messenger</title>
+        <style>
+            div.input {
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                bottom:0px;
+                left:0px;
+                background-color: beige;
+            }
+            div.input input {
+                width:90%;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right:5px;
+                height:20px;
+            }
+            div.input button {
+                width:5%;
+                height:25px;
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-right:10px;
+                margin-left:5px;
+            }
+            p {
+                font-family: consolas;
+            }
+        </style>
+
+        <script src="/app.js"></script>
+        </head>
+        <body>
+            <div id="e">
+
+            </div>
+            <div class="input">
+                <input type="text" id="INPUT"></input>
+                <script>
+                    thing();
+                </script>
+                <button onclick="send(document.getElementById('INPUT').value)">Send</button>
+            </div>
+        </body>
+</html>
